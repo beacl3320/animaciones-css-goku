@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cuadrado{
+    width: 500px;
+    height: 500px;
+    background: burlywood;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.goku{
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+    animation: animacion1 3s infinite;
+    margin-top:70px;
+    border-radius: 30px;
+}
+
+@keyframes animacion1 {
+    0%{
+        transform: translateY(-50px);
+    }
+    30%{
+        transform: translateY(0) rotate(5deg);
+        box-shadow: 10px 10px 6px rgb(0, 0, 0, .5);
+    }
+    50%{
+        transform: rotate(-5deg);
+    }
+    75%{
+        transform: rotate(5deg);
+    }
+    100%{
+        transform: translateY(-50px);
+    }
+}
+
+.cuadrado2{
+    width: 200px;
+    height: 200px;
+    background: steelblue;
+    margin: 20px auto;
+    overflow: hidden;
+    animation: animaciones 2s;
+}
